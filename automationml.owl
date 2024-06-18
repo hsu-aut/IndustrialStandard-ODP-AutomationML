@@ -486,9 +486,9 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#InterfaceClass"/>
+        <rdfs:range rdf:resource="https://w3id.org/i40/aml#ExternalInterface"/>
         <rdfs:label xml:lang="en">hasInterface</rdfs:label>
-        <skos:definition xml:lang="en">Superproperty to link elements to Interface Classes</skos:definition>
+        <skos:definition xml:lang="en">Superproperty to link elements to Interfaces</skos:definition>
         <skos:prefLabel xml:lang="en">hasInterface</skos:prefLabel>
     </owl:ObjectProperty>
     
@@ -524,9 +524,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasInterfaceIE">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasInterface"/>
         <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#InterfaceClass"/>
+        <rdfs:range rdf:resource="https://w3id.org/i40/aml#ExternalInterface"/>
         <rdfs:label xml:lang="en">hasInterfaceIE</rdfs:label>
-        <skos:definition xml:lang="en">Connects Internal Elements with Interface Classes</skos:definition>
+        <skos:definition xml:lang="en">Connects Internal Elements with Interfaces</skos:definition>
         <skos:prefLabel xml:lang="en">hasInterfaceIE</skos:prefLabel>
     </owl:ObjectProperty>
     
@@ -537,9 +537,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasInterfaceRC">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasInterface"/>
         <rdfs:domain rdf:resource="https://w3id.org/i40/aml#RoleClass"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#InterfaceClass"/>
+        <rdfs:range rdf:resource="https://w3id.org/i40/aml#ExternalInterface"/>
         <rdfs:label xml:lang="en">hasInterfaceRC</rdfs:label>
-        <skos:definition xml:lang="en">Connects Role Classes with Interface Classes</skos:definition>
+        <skos:definition xml:lang="en">Connects Role Classes with Interfaces</skos:definition>
         <skos:prefLabel xml:lang="en">hasInterfaceRC</skos:prefLabel>
     </owl:ObjectProperty>
     
@@ -550,9 +550,9 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasInterfaceSUC">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasInterface"/>
         <rdfs:domain rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#InterfaceClass"/>
+        <rdfs:range rdf:resource="https://w3id.org/i40/aml#ExternalInterface"/>
         <rdfs:label xml:lang="en">hasInterfaceSUC</rdfs:label>
-        <skos:definition xml:lang="en">Connects System Unit Classes with Interface Classes</skos:definition>
+        <skos:definition xml:lang="en">Connects System Unit Classes with Interfaces</skos:definition>
         <skos:prefLabel xml:lang="en">hasInterfaceSUC</skos:prefLabel>
     </owl:ObjectProperty>
     
