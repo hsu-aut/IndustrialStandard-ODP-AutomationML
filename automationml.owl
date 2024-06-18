@@ -568,6 +568,17 @@
     
 
 
+    <!-- https://w3id.org/i40/aml#hasMappingObject -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasMappingObject">
+        <rdfs:comment>Only explicitly included in AutomationML, if the Names of the Elements do not match and the Information is explicitly modeled. If the names match, it can be inferred through a SWRL-Rule.</rdfs:comment>
+        <rdfs:label>hasMappingObject</rdfs:label>
+        <skos:definition>Connects Attributes or Interfaces of Internal Elements to their corresponding counterparts at the Internal Elements RoleClass (as per :hasRequiredRole).</skos:definition>
+        <skos:prefLabel>hasMappingLabel</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/i40/aml#hasMasterObject -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasMasterObject">
