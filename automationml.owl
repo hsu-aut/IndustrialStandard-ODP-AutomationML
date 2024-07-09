@@ -480,6 +480,8 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#ExternalInterface"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#InterfaceClass"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#InternalElement"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#RoleClass"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#SystemUnitClass"/>
@@ -620,7 +622,9 @@
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#Attribute"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#AttributeType"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#ExternalInterface"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#InterfaceClass"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#InternalElement"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#RoleClass"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#SystemUnitClass"/>
                 </owl:unionOf>
             </owl:Class>
@@ -680,7 +684,14 @@
     <!-- https://w3id.org/i40/aml#hasRefAttributeType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasRefAttributeType">
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Attribute"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#Attribute"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#AttributeType"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/i40/aml#AttributeType"/>
         <rdfs:label>hasRefAttributeType</rdfs:label>
         <skos:definition>Links Attributes to to an AttributeType</skos:definition>
@@ -698,6 +709,7 @@
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#ExternalInterface"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#InterfaceClass"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#RoleClass"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#SystemUnitClass"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -706,6 +718,7 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#InterfaceClass"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#RoleClass"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#SystemUnitClass"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -1002,7 +1015,9 @@
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#Attribute"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#AttributeType"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#ExternalInterface"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#InterfaceClass"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#InternalElement"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#RoleClass"/>
                     <rdf:Description rdf:about="https://w3id.org/i40/aml#SystemUnitClass"/>
                 </owl:unionOf>
             </owl:Class>
