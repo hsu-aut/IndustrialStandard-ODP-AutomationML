@@ -1116,19 +1116,6 @@
     
 
 
-    <!-- https://w3id.org/i40/aml#hasAttributeDataType -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasAttributeDataType">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasDataType"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Attribute"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasAttributeDataType</rdfs:label>
-        <skos:definition>Describes an Attributes DataType as a String</skos:definition>
-        <skos:prefLabel xml:lang="en">hasDataType</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/i40/aml#hasAttributeDescription -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasAttributeDescription">
@@ -1196,18 +1183,6 @@
     
 
 
-    <!-- https://w3id.org/i40/aml#hasDataTypeAT -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasDataTypeAT">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasDataType"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AttributeType"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasDataTypeAT</rdfs:label>
-        <skos:definition>Describes an AttributeTypes DataType as a String</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/i40/aml#hasDefaultValue -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasDefaultValue">
@@ -1222,32 +1197,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
         <rdfs:label>hasDefaultValue</rdfs:label>
         <skos:definition>Describes an Attributes or AttributeTypes DefaultValue as a String</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasDefaultValueAT -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasDefaultValueAT">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasDefaultValue"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AttributeType"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasDefaultValueAT</rdfs:label>
-        <skos:definition>Defines the default value of an attribute type</skos:definition>
-        <skos:prefLabel>hasDefaultValueAT</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasDefaultValueAttribute -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasDefaultValueAttribute">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasDefaultValue"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Attribute"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasDefaultValueAttribute</rdfs:label>
-        <skos:definition>Defines the default value of an attribute</skos:definition>
-        <skos:prefLabel>hasDefaultValueAttribute</skos:prefLabel>
     </owl:DatatypeProperty>
     
 
@@ -1272,6 +1221,19 @@
         <rdfs:label>hasExternalReferencePath</rdfs:label>
         <skos:definition>A external Reference of a CAEX File contains path to the file</skos:definition>
         <skos:prefLabel xml:lang="en">externalReferencePath</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/i40/aml#hasFileName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasFileName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#CAEXFile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:label>hasFileName</rdfs:label>
+        <skos:definition xml:lang="en">Defines the name of the main AutomationML File</skos:definition>
+        <skos:prefLabel>hasFileName</skos:prefLabel>
     </owl:DatatypeProperty>
     
 
@@ -1372,209 +1334,6 @@
     
 
 
-    <!-- https://w3id.org/i40/aml#hasNameAT -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameAT">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AttributeType"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameAT</rdfs:label>
-        <skos:definition>Defines the name of the AttributeType concept</skos:definition>
-        <skos:prefLabel>hasNameAT</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameATL -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameATL">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AttributeTypeLib"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameATL</rdfs:label>
-        <skos:definition>Defines the name of an AttributeTypeLibrary.</skos:definition>
-        <skos:prefLabel>hasNameATL</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameAttribute -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameAttribute">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Attribute"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameAttribute</rdfs:label>
-        <skos:definition xml:lang="en">Defines the name of the Attribute concept</skos:definition>
-        <skos:prefLabel xml:lang="en">hasNameAttribute</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameConstraint -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameConstraint">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Constraint"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameConstraint</rdfs:label>
-        <skos:definition>Defines the name of a constraint.</skos:definition>
-        <skos:prefLabel>hasNameConstraint</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameEI -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameEI">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#ExternalInterface"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameEI</rdfs:label>
-        <skos:definition>Defines the Name of an External Interface.</skos:definition>
-        <skos:prefLabel>hasNameEI</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameFile -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameFile">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#CAEXFile"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameFile</rdfs:label>
-        <skos:definition xml:lang="en">Defines the name of the main AutomationML File</skos:definition>
-        <skos:prefLabel>hasNameFile</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameIC -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameIC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InterfaceClass"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameIC</rdfs:label>
-        <skos:altLabel xml:lang="en">hasInterfaceClassName</skos:altLabel>
-        <skos:definition xml:lang="en">Name of the Interface Class</skos:definition>
-        <skos:prefLabel xml:lang="en">hasNameIC</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameICL -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameICL">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InterfaceClassLib"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameICL</rdfs:label>
-        <skos:definition>Defines the Name of an InterfaceClassLib.</skos:definition>
-        <skos:prefLabel>hasNameICL</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameIE -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameIE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameIE</rdfs:label>
-        <skos:altLabel xml:lang="en">hasInternalElementName</skos:altLabel>
-        <skos:definition xml:lang="en">Name of an Internal Element</skos:definition>
-        <skos:prefLabel xml:lang="en">hasNameIE</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameIH -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameIH">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InstanceHierarchy"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameIH</rdfs:label>
-        <skos:altLabel xml:lang="en">hasInstanceHierarchyName</skos:altLabel>
-        <skos:definition xml:lang="en">Given Name of the Instance Hierarchy</skos:definition>
-        <skos:prefLabel xml:lang="en">hasNameIH</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameIL -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameIL">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalLink"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNAmeIL</rdfs:label>
-        <skos:definition>Defines the Name of an InternalLink.</skos:definition>
-        <skos:prefLabel>hasNameIL</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameRC -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameRC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#RoleClass"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameRC</rdfs:label>
-        <skos:altLabel xml:lang="en">hasRoleClassName</skos:altLabel>
-        <skos:definition xml:lang="en">Name for a RoleClass</skos:definition>
-        <skos:prefLabel xml:lang="en">hasNameRC</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameRCL -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameRCL">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#RoleClassLib"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameRCL</rdfs:label>
-        <skos:definition>Defines the name of a RoleClassLib.</skos:definition>
-        <skos:prefLabel>hasNameRCL</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameSUC -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameSUC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameSUC</rdfs:label>
-        <skos:altLabel xml:lang="en">hasSystemUnitClassName</skos:altLabel>
-        <skos:definition xml:lang="en">Given Name of the System Unit Class</skos:definition>
-        <skos:prefLabel xml:lang="en">hasNameSUC</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasNameSUCL -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasNameSUCL">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#SystemUnitClassLib"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasNameSUCL</rdfs:label>
-        <skos:definition>Describes the Name of a SystemUnitClassLibrary.</skos:definition>
-        <skos:prefLabel>hasNameSUCL</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/i40/aml#hasProjectId -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasProjectId">
@@ -1599,95 +1358,6 @@
         <skos:definition>Defines a projects Title.</skos:definition>
         <skos:prefLabel>has Project Release</skos:prefLabel>
         <skos:prefLabel xml:lang="en">hasProjectRelease</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasRefBaseClassPath -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasRefBaseClassPath">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasRefBaseClassPath</rdfs:label>
-        <skos:definition xml:lang="en">Stores the name of the parent class</skos:definition>
-        <skos:prefLabel xml:lang="en">refBaseClassPath</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasRefBaseClassPathAT -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasRefBaseClassPathAT">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasRefBaseClassPath"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AttributeType"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasRefBaseClassPathAT</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasRefBaseClassPathIC -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasRefBaseClassPathIC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasRefBaseClassPath"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InterfaceClass"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasRefBaseClassPathIC</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasRefBaseClassPathRC -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasRefBaseClassPathRC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasRefBaseClassPath"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#RoleClass"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasRefBaseClassPathRC</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasRefBaseClassPathSUC -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasRefBaseClassPathSUC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasRefBaseClassPath"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasRefBaseClassPathSUC</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasRefBaseRoleClassPath -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasRefBaseRoleClassPath">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasRefBaseRoleClassPath</rdfs:label>
-        <skos:definition xml:lang="en">Points to the path of the Base RoleClass</skos:definition>
-        <skos:prefLabel xml:lang="en">hasRefBaseRoleClassPath</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasRefBaseSystemUnitPath -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasRefBaseSystemUnitPath">
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasRefBaseSystemUnitPath</rdfs:label>
-        <skos:altLabel xml:lang="en">Ref Base System Unit Path</skos:altLabel>
-        <skos:prefLabel xml:lang="en">refBaseSUPath</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasRefRoleClassPath -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasRefRoleClassPath">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasRefRoleClassPath</rdfs:label>
-        <skos:altLabel xml:lang="en">refRoleClassPath</skos:altLabel>
-        <skos:prefLabel xml:lang="en">refRCPath</skos:prefLabel>
     </owl:DatatypeProperty>
     
 
@@ -1765,19 +1435,6 @@
     
 
 
-    <!-- https://w3id.org/i40/aml#hasVersionATL -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasVersionATL">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasVersion"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AttributeType"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasVersionATL</rdfs:label>
-        <skos:definition>Points to the Version of the AttributeTypeLib</skos:definition>
-        <skos:prefLabel>hasVersionATL</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/i40/aml#hasVersionEClass -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasVersionEClass">
@@ -1787,45 +1444,6 @@
         <rdfs:label>hasVersionEClass</rdfs:label>
         <skos:definition xml:lang="en">Points to the eClass version for a given Element</skos:definition>
         <skos:prefLabel xml:lang="en">eClassVersion</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasVersionICL -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasVersionICL">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasVersion"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InterfaceClassLib"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasVersionICL</rdfs:label>
-        <skos:definition xml:lang="en">Points to the version for a Interface Class Lib</skos:definition>
-        <skos:prefLabel xml:lang="en">hasVersionICL</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasVersionRCL -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasVersionRCL">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasVersion"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#RoleClassLib"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasVersionRCL</rdfs:label>
-        <skos:definition xml:lang="en">Points to the version for a Role Class Lib</skos:definition>
-        <skos:prefLabel xml:lang="en">hasVersionRCL</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasVersionSUC -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasVersionSUC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasVersion"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-        <rdfs:label>hasVersionSUC</rdfs:label>
-        <skos:definition xml:lang="en">Points to the version of a System Unit Class</skos:definition>
-        <skos:prefLabel xml:lang="en">hasVersionSUC</skos:prefLabel>
     </owl:DatatypeProperty>
     
 
