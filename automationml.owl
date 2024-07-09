@@ -395,7 +395,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AttributeTypeLib"/>
         <rdfs:range rdf:resource="https://w3id.org/i40/aml#AttributeType"/>
         <rdfs:label>hasAttributeType</rdfs:label>
-        <skos:definition>Models the relation between AttributeTpeLib and AttributeType</skos:definition>
+        <skos:definition>Models the relation between AttributeTypeLib and AttributeType</skos:definition>
         <skos:prefLabel>hasAttributeType</skos:prefLabel>
     </owl:ObjectProperty>
     
@@ -685,6 +685,33 @@
         <rdfs:label>hasRefAttributeType</rdfs:label>
         <skos:definition>Links Attributes to to an AttributeType</skos:definition>
         <skos:prefLabel>hasRefAttributeType</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/i40/aml#hasRefBaseClass -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasRefBaseClass">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#ExternalInterface"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#InterfaceClass"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#RoleClass"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#InterfaceClass"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#RoleClass"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>hasRefBaseClass</rdfs:label>
+        <skos:definition>RefBaseClass connects a RoleClass, an InterfaceClass or an ExternalInterface with it&apos;s parent Class. Depending on the Domain, it can either imply an rdf:type- or rdfs:subClassOf-Relationship.</skos:definition>
+        <skos:prefLabel>hasRefBaseClass</skos:prefLabel>
     </owl:ObjectProperty>
     
 
