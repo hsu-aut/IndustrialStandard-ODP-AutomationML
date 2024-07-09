@@ -311,84 +311,6 @@
     
 
 
-    <!-- https://w3id.org/i40/aml#hasAttributeAT -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttributeAT">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasAttribute"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AttributeType"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#Attribute"/>
-        <rdfs:label>hasAttributeAT</rdfs:label>
-        <skos:definition>Connects AttributeType with Attributes</skos:definition>
-        <skos:prefLabel>hasAttributeAT</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasAttributeEI -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttributeEI">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasAttribute"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#ExternalInterface"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#Attribute"/>
-        <rdfs:label>hasAttributeEI</rdfs:label>
-        <skos:definition>Connects an External Interdace with Attributes</skos:definition>
-        <skos:prefLabel>hasAttributeEI</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasAttributeIC -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttributeIC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasAttribute"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InterfaceClass"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#Attribute"/>
-        <rdfs:label xml:lang="en">hasAttributeIC</rdfs:label>
-        <skos:definition xml:lang="en">Connects the Interface Class with Attributes</skos:definition>
-        <skos:prefLabel xml:lang="en">hasAttributeIC</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasAttributeIE -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttributeIE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasAttribute"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#Attribute"/>
-        <rdfs:label xml:lang="en">hasAttributeIE</rdfs:label>
-        <skos:definition xml:lang="en">Connects the Internal Elements with Attributes</skos:definition>
-        <skos:prefLabel xml:lang="en">hasAttributeIE</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasAttributeRC -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttributeRC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasAttribute"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#RoleClass"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#Attribute"/>
-        <rdfs:label xml:lang="en">hasAttributeRC</rdfs:label>
-        <skos:definition xml:lang="en">Connects Role Classes with Attributes</skos:definition>
-        <skos:prefLabel xml:lang="en">hasAttributeRC</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasAttributeSUC -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttributeSUC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasAttribute"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#Attribute"/>
-        <rdfs:label xml:lang="en">hasAttributeSUC</rdfs:label>
-        <skos:definition xml:lang="en">Connects System Unit Classes with Attributes</skos:definition>
-        <skos:prefLabel xml:lang="en">hasAttributeSUC</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/i40/aml#hasAttributeType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttributeType">
@@ -510,45 +432,6 @@
     
 
 
-    <!-- https://w3id.org/i40/aml#hasInterfaceIE -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasInterfaceIE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasInterface"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#ExternalInterface"/>
-        <rdfs:label xml:lang="en">hasInterfaceIE</rdfs:label>
-        <skos:definition xml:lang="en">Connects Internal Elements with Interfaces</skos:definition>
-        <skos:prefLabel xml:lang="en">hasInterfaceIE</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasInterfaceRC -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasInterfaceRC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasInterface"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#RoleClass"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#ExternalInterface"/>
-        <rdfs:label xml:lang="en">hasInterfaceRC</rdfs:label>
-        <skos:definition xml:lang="en">Connects Role Classes with Interfaces</skos:definition>
-        <skos:prefLabel xml:lang="en">hasInterfaceRC</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasInterfaceSUC -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasInterfaceSUC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasInterface"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#ExternalInterface"/>
-        <rdfs:label xml:lang="en">hasInterfaceSUC</rdfs:label>
-        <skos:definition xml:lang="en">Connects System Unit Classes with Interfaces</skos:definition>
-        <skos:prefLabel xml:lang="en">hasInterfaceSUC</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/i40/aml#hasInternalElement -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasInternalElement">
@@ -620,40 +503,6 @@
         </rdfs:domain>
         <rdfs:label>hasPart</rdfs:label>
         <skos:definition>Describes that an InternalElement, SystemUnitClass, Attribute, AttributeType or ExternalInterface is composed of multiple subcomponents.</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasPartIE -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasPartIE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasPart"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/i40/aml#isPartOfIE"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:label>hasPartIE</rdfs:label>
-        <skos:definition>Describes that an InternalElement  is composed of multiple subcomponents.</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasPartSUC -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasPartSUC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasPart"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/i40/aml#isPartOfSUC"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/i40/aml#InternalElement"/>
-                    <rdf:Description rdf:about="https://w3id.org/i40/aml#SystemUnitClass"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label>hasPartSUC</rdfs:label>
-        <skos:definition>Describes that a SystemUnitClass is composed of multiple subcomponents.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -773,45 +622,6 @@
     
 
 
-    <!-- https://w3id.org/i40/aml#hasRefSemAT -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasRefSemAT">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasSemanticRef"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AttributeType"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#ExternalStandard"/>
-        <rdfs:label>hasRefSemAT</rdfs:label>
-        <skos:definition>General property which points to an external standard to provide semantic identification for a given AttributeType.</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasRefSemAttribute -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasRefSemAttribute">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasSemanticRef"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Attribute"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#ExternalStandard"/>
-        <rdfs:label>hasRefSemAttribute</rdfs:label>
-        <skos:definition>General property which points to an external standard to provide semantic identification for a given Attribute.</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasRefSemRC -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasRefSemRC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasSemanticRef"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#RoleClass"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#ExternalStandard"/>
-        <rdfs:label>hasRefSemRC</rdfs:label>
-        <skos:altLabel xml:lang="en">RoleClasseClassReference</skos:altLabel>
-        <skos:definition xml:lang="en">A Role Class points to its ID according to eClass</skos:definition>
-        <skos:definition>General property which points to an external standard to provide semantic identification for a given RoleClass.</skos:definition>
-        <skos:prefLabel>eClassRCReference</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/i40/aml#hasRoleClass -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasRoleClass">
@@ -856,30 +666,6 @@
     
 
 
-    <!-- https://w3id.org/i40/aml#hasRoleRequirementIE -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasRoleRequirementIE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasRoleRequirement"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#RoleClass"/>
-        <rdfs:label>hasRoleRequirementIE</rdfs:label>
-        <skos:definition>Defines a Requirement, towards an InternalElement, that the Element must be able to fill a RoleClass.</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasRoleRequirementSUC -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasRoleRequirementSUC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasRoleRequirement"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#RoleClass"/>
-        <rdfs:label>hasRoleRequirementSUC</rdfs:label>
-        <skos:definition>Defines a Requirement, towards a SystemUnitClass, that the Element must be able to fill a RoleClass.</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/i40/aml#hasSemanticRef -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasSemanticRef">
@@ -915,32 +701,6 @@
         <rdfs:label>hasSupportedRoleClass</rdfs:label>
         <skos:definition xml:lang="en">Internal element or SystemUnitClass has Supported Role Class. Supporting a RoleClass implies a rdf:Type relationship between IE/SUC and RC.</skos:definition>
         <skos:prefLabel xml:lang="en">supportedRoleClass</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasSupportedRoleClassIE -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasSupportedRoleClassIE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasSupportedRoleClass"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#RoleClass"/>
-        <rdfs:label>hasSupportedRoleClassIE</rdfs:label>
-        <skos:definition>Internal element has Supported Role Class.
- Supporting a RoleClass implies a rdf:Type relationship between IE and RC.</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasSupportedRoleClassSUC -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasSupportedRoleClassSUC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasSupportedRoleClass"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#RoleClass"/>
-        <rdfs:label>hasSupportedRoleClassSUC</rdfs:label>
-        <skos:definition>SystemUnitClass has Supported Role Class.
- Supporting a RoleClass implies a rdf:Type relationship between SUC and RC.</skos:definition>
     </owl:ObjectProperty>
     
 
@@ -1033,42 +793,6 @@
         </rdfs:range>
         <rdfs:label>isPartOf</rdfs:label>
         <skos:definition>Describes that subcomponents are part of an InternalElement, SystemUnitClass, AttributeType, Attribute or ExternalInterface.</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#isPartOfIE -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#isPartOfIE">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#isPartOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:label>isPartOfIE</rdfs:label>
-        <skos:altLabel xml:lang="en">InternalElementPartOf</skos:altLabel>
-        <skos:definition xml:lang="en">Connects the Internal Element with other Internal Elements that are part of the given Internal Element</skos:definition>
-        <skos:prefLabel xml:lang="en">isPartOfIE</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#isPartOfSUC -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#isPartOfSUC">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#isPartOf"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/i40/aml#InternalElement"/>
-                    <rdf:Description rdf:about="https://w3id.org/i40/aml#SystemUnitClass"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
-        <rdfs:label>isPartOfSUC</rdfs:label>
-        <skos:altLabel xml:lang="en">SystemUnitClassPartOf</skos:altLabel>
-        <skos:definition xml:lang="en">Connects the System Unit Class or Internal Element  with a System Unit Class that they are a part of.</skos:definition>
-        <skos:prefLabel xml:lang="en">isPartOfSUC</skos:prefLabel>
     </owl:ObjectProperty>
     
 
