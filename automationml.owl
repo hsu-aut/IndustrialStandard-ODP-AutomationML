@@ -722,8 +722,15 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasRefBaseSystemUnitClass">
         <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
-        <rdfs:comment>The RefBaseSystemUnitPath is also reused in AutomationML to connect an InternalElement with another Internal Element. In this case, the object property instead describes a hasMasterObject relationship and should be modeled as such.</rdfs:comment>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#InternalElement"/>
+                    <rdf:Description rdf:about="https://w3id.org/i40/aml#SystemUnitClass"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>The RefBaseSystemUnitPath is also reused in AutomationML to connect an InternalElement with another Internal Element. In this case, the object property instead describes a hasMasterObject relationship.</rdfs:comment>
         <rdfs:label xml:lang="en">hasRefBaseSystemUnitClass</rdfs:label>
         <skos:definition xml:lang="en">Links Internal Elements with System Unit Classes</skos:definition>
         <skos:prefLabel xml:lang="en">hasRefBaseSystemUnitClass</skos:prefLabel>
