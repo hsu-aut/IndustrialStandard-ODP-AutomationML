@@ -426,17 +426,6 @@
     
 
 
-    <!-- https://w3id.org/i40/aml#hasBaseSystemUnitClass -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasBaseSystemUnitClass">
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
-        <rdfs:label xml:lang="en">hasBaseSystemUnitClass</rdfs:label>
-        <skos:definition xml:lang="en">Links Internal Elements with System Unit Classes</skos:definition>
-        <skos:prefLabel xml:lang="en">hasBaseSystemUnitClass</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/i40/aml#hasConstraint -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasConstraint">
@@ -725,6 +714,19 @@
         <rdfs:label>hasRefBaseClass</rdfs:label>
         <skos:definition>RefBaseClass connects a RoleClass, an InterfaceClass or an ExternalInterface with it&apos;s parent Class. Depending on the Domain, it can either imply an rdf:type- or rdfs:subClassOf-Relationship.</skos:definition>
         <skos:prefLabel>hasRefBaseClass</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/i40/aml#hasRefBaseSystemUnitClass -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasRefBaseSystemUnitClass">
+        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#InternalElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/i40/aml#SystemUnitClass"/>
+        <rdfs:comment>The RefBaseSystemUnitPath is also reused in AutomationML to connect an InternalElement with another Internal Element. In this case, the object property instead describes a hasMasterObject relationship and should be modeled as such.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRefBaseSystemUnitClass</rdfs:label>
+        <skos:definition xml:lang="en">Links Internal Elements with System Unit Classes</skos:definition>
+        <skos:prefLabel xml:lang="en">hasRefBaseSystemUnitClass</skos:prefLabel>
     </owl:ObjectProperty>
     
 
