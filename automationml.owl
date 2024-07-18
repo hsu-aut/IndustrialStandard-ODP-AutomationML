@@ -985,6 +985,18 @@
     
 
 
+    <!-- https://w3id.org/i40/aml#hasLastWritingDateTime -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasLastWritingDateTime">
+        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Origin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>hasLastWritingDateTime</rdfs:label>
+        <skos:definition>Defines the last time that a file was modified.</skos:definition>
+        <skos:prefLabel>hasLastWritingDateTime</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/i40/aml#hasMaxValue -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasMaxValue">
@@ -1018,30 +1030,105 @@
     
 
 
-    <!-- https://w3id.org/i40/aml#hasProjectId -->
+    <!-- https://w3id.org/i40/aml#hasOriginId -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasProjectId">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasOriginId">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasID"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Project"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Origin"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasProjectID</rdfs:label>
-        <skos:definition xml:lang="en">Unique identification of a Project.</skos:definition>
-        <skos:prefLabel xml:lang="en">hasProjectTitle</skos:prefLabel>
+        <rdfs:label>hasOriginID</rdfs:label>
+        <skos:definition xml:lang="en">Defines the identification of the Writer, i.e., the tool that produced the file</skos:definition>
+        <skos:prefLabel>hasOriginId</skos:prefLabel>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://w3id.org/i40/aml#hasProjectTitle -->
+    <!-- https://w3id.org/i40/aml#hasOriginName -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasProjectTitle">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasOriginName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
+        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Origin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:label>hasOriginName</rdfs:label>
+        <skos:definition xml:lang="en">The name of the Writer, i.e., the tool that produced the file</skos:definition>
+        <skos:prefLabel>hasOriginName</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/i40/aml#hasOriginProjectId -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasOriginProjectId">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasOriginProjectID</rdfs:label>
+        <skos:definition xml:lang="en">Unique identification of a Project.</skos:definition>
+        <skos:prefLabel xml:lang="en">hasOriginProjectID</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/i40/aml#hasOriginProjectTitle -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasOriginProjectTitle">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
         <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Project"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasProjectTitle</rdfs:label>
-        <skos:definition>Defines a projects Title.</skos:definition>
-        <skos:prefLabel>has Project Release</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">hasProjectRelease</skos:prefLabel>
+        <rdfs:label>hasOriginProjectTitle</rdfs:label>
+        <skos:definition>Defines the ProjectTitle of the tool that created the file.</skos:definition>
+        <skos:prefLabel>hasOriginProjectTitle</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/i40/aml#hasOriginRelease -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasOriginRelease">
+        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Origin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasOriginRelease</rdfs:label>
+        <skos:definition xml:lang="en">Defines the last release of the writter, i.e., the tool that produces the AutomationML file</skos:definition>
+        <skos:prefLabel xml:lang="en">hasOriginRelease</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/i40/aml#hasOriginVendor -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasOriginVendor">
+        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Origin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:label>hasOriginVendor</rdfs:label>
+        <skos:definition xml:lang="en">Defines the vendor of the writter, i.e., the tool that produces the AutomationML file</skos:definition>
+        <skos:prefLabel xml:lang="en">hasOriginVendor</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/i40/aml#hasOriginVendorURL -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasOriginVendorURL">
+        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Origin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>hasOriginVendorURL</rdfs:label>
+        <skos:definition xml:lang="en">Defines the Vendor url of the writter, i.e., the tool that produces the AutomationML file</skos:definition>
+        <skos:prefLabel xml:lang="en">hasOriginVendorURL</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/i40/aml#hasOriginVersion -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasOriginVersion">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasVersion"/>
+        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Origin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hasOriginVersion</rdfs:label>
+        <skos:definition xml:lang="en">Defines the last version of the writter, i.e., the tool that produces the AutomationML file</skos:definition>
+        <skos:prefLabel xml:lang="en">hasOriginVersion</skos:prefLabel>
     </owl:DatatypeProperty>
     
 
@@ -1128,82 +1215,6 @@
         <rdfs:label>hasVersionEClass</rdfs:label>
         <skos:definition xml:lang="en">Points to the eClass version for a given Element</skos:definition>
         <skos:prefLabel xml:lang="en">eClassVersion</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasWriterId -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasWriterId">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasID"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AdditionalInformation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasWriterID</rdfs:label>
-        <skos:definition xml:lang="en">Defines the identification of the Writer, i.e., the tool that produced the file</skos:definition>
-        <skos:prefLabel>hasWriterId</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasWriterName -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasWriterName">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasName"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AdditionalInformation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasWriterName</rdfs:label>
-        <skos:definition xml:lang="en">The name of the Writer, i.e., the tool that produced the file</skos:definition>
-        <skos:prefLabel>hasWriterName</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasWriterRelease -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasWriterRelease">
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AdditionalInformation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasWriterRelease</rdfs:label>
-        <skos:definition xml:lang="en">Defines the last release of the writter, i.e., the tool that produces the AutomationML file</skos:definition>
-        <skos:prefLabel xml:lang="en">hasWriterRelease</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasWriterVendor -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasWriterVendor">
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AdditionalInformation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
-        <rdfs:label>hasWriterVendor</rdfs:label>
-        <skos:definition xml:lang="en">Defines the vendor of the writter, i.e., the tool that produces the AutomationML file</skos:definition>
-        <skos:prefLabel xml:lang="en">hasWriterVendor</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasWriterVendorURL -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasWriterVendorURL">
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AdditionalInformation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:label>hasWriterVendorURL</rdfs:label>
-        <skos:definition xml:lang="en">Defines the Vendor url of the writter, i.e., the tool that produces the AutomationML file</skos:definition>
-        <skos:prefLabel xml:lang="en">hasWriterVendorURL</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/i40/aml#hasWriterVersion -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasWriterVersion">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasVersion"/>
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AdditionalInformation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>hasWriterVersion</rdfs:label>
-        <skos:definition xml:lang="en">Defines the last version of the writter, i.e., the tool that produces the AutomationML file</skos:definition>
-        <skos:prefLabel xml:lang="en">hasWriterVersion</skos:prefLabel>
     </owl:DatatypeProperty>
     
 
@@ -1427,6 +1438,16 @@
         <rdfs:label>OrdinalScaledConstraint</rdfs:label>
         <skos:definition>OrdinalScaledType allows for the definition of the “required value”, the “max value” and the “min value”.</skos:definition>
         <skos:prefLabel>OrdinalScaledConstraint</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/i40/aml#Origin -->
+
+    <owl:Class rdf:about="https://w3id.org/i40/aml#Origin">
+        <rdfs:label>Origin</rdfs:label>
+        <skos:definition>Defines the tool that was used to create an AutomationML file.</skos:definition>
+        <skos:prefLabel>Origin</skos:prefLabel>
     </owl:Class>
     
 
