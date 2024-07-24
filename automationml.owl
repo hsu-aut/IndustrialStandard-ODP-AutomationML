@@ -483,6 +483,16 @@
     
 
 
+    <!-- https://w3id.org/i40/aml#hasOrigin -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasOrigin">
+        <rdfs:label>hasOrigin</rdfs:label>
+        <skos:definition>Related Origin for a CAEX file.</skos:definition>
+        <skos:prefLabel>hasOrigin</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/i40/aml#hasPart -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasPart">
@@ -1060,7 +1070,6 @@
     <!-- https://w3id.org/i40/aml#hasOriginProjectId -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasOriginProjectId">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/i40/aml#hasID"/>
         <rdfs:domain rdf:resource="https://w3id.org/i40/aml#Project"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
