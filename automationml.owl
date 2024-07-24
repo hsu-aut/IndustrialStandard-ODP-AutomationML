@@ -287,18 +287,6 @@
     
 
 
-    <!-- https://w3id.org/i40/aml#hasAdditionalInformation -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAdditionalInformation">
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#CAEXFile"/>
-        <rdfs:range rdf:resource="https://w3id.org/i40/aml#AdditionalInformation"/>
-        <rdfs:label xml:lang="en">hasAdditionalInformation</rdfs:label>
-        <skos:definition xml:lang="en">Connect the CAEXFile with the Additional information concept</skos:definition>
-        <skos:prefLabel xml:lang="en">hasAdditionalInformation</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/i40/aml#hasAttribute -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasAttribute">
@@ -520,7 +508,6 @@
     <!-- https://w3id.org/i40/aml#hasProject -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/i40/aml#hasProject">
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AdditionalInformation"/>
         <rdfs:range rdf:resource="https://w3id.org/i40/aml#Project"/>
         <rdfs:label>hasProject</rdfs:label>
         <skos:definition xml:lang="en">Related Project for the CAEX File.</skos:definition>
@@ -841,11 +828,21 @@
     <!-- https://w3id.org/i40/aml#hasAMLVersion -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasAMLVersion">
-        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#AdditionalInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:label>hasAMLVersion</rdfs:label>
         <skos:definition>Defines the AML Version of an AML file.</skos:definition>
         <skos:prefLabel xml:lang="en">hasAMLVersion</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/i40/aml#hasAdditionalInformation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/i40/aml#hasAdditionalInformation">
+        <rdfs:domain rdf:resource="https://w3id.org/i40/aml#CAEXFile"/>
+        <rdfs:label xml:lang="en">hasAdditionalInformation</rdfs:label>
+        <skos:definition xml:lang="en">Connect the CAEXFile with the Additional information concept</skos:definition>
+        <skos:prefLabel xml:lang="en">hasAdditionalInformation</skos:prefLabel>
     </owl:DatatypeProperty>
     
 
@@ -1278,16 +1275,6 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
         <rdfs:isDefinedBy>https://www.w3.org/TR/prov-o/#Activity</rdfs:isDefinedBy>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/i40/aml#AdditionalInformation -->
-
-    <owl:Class rdf:about="https://w3id.org/i40/aml#AdditionalInformation">
-        <rdfs:label>AdditionalInformation</rdfs:label>
-        <skos:definition xml:lang="en">Additional Information for CAEX File</skos:definition>
-        <skos:prefLabel xml:lang="en">AdditionalInformation</skos:prefLabel>
     </owl:Class>
     
 
