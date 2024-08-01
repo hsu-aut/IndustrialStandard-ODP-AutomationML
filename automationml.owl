@@ -767,6 +767,18 @@
     
 
 
+    <!-- https://w3id.org/hsu-aut/AutomationML#isLinkedTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#isLinkedTo">
+        <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#ExternalInterface"/>
+        <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#ExternalInterface"/>
+        <rdfs:label>isLinkedTo</rdfs:label>
+        <skos:definition>Object Property, that directly links ExternalInterfaces, that are connected via an InternalLink. Since Internal Links are directional, it always links RefPatnerSideA to RefPartnerSideB.</skos:definition>
+        <skos:prefLabel>isLinkedTo</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/hsu-aut/AutomationML#isPartOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#isPartOf">
