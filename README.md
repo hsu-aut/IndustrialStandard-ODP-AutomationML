@@ -25,9 +25,10 @@ It offers advantages in numerous aspects:
  - Complexity Management: Modern automated systems are highly complex, involving numerous components and subsystems. AutomationML helps manage this complexity by offering a clear and standardized method to represent and interconnect different system elements.
  - Flexibility and Extensibility: AutomationML is designed to be flexible and extensible, allowing it to adapt to future requirements and incorporate new technologies and methodologies as they emerge.
 
-This ontology build upon and extends a previous AutomationML-Ontology, that can be found at https://github.com/i40-Tools/AutomationMLOntology/tree/master.
-An preprint describing the design principles and choices can further be found at https://www.semantic-web-journal.net/system/files/swj1855.pdf. 
-However, since the inception of the original AutomationML-ontology, the AutomationML standard underwent continuous development, which caused the ontology to become outdated. The current state of the ontology reflects these changes. 
+This ontology builds upon and extends a previous AutomationML-Ontology, that can be found at https://github.com/i40-Tools/AutomationMLOntology/tree/master.
+A preprint describing the design principles and choices can further be found at https://www.semantic-web-journal.net/system/files/swj1855.pdf. 
+However, since the inception of the original AutomationML-ontology, the AutomationML standard underwent continuous and significant development, which caused the ontology to become outdated. 
+The provided ontology significantly extends the coverage of the previous version and introduced numerous changes to align the ontology to the vocabulary of AutomationML/CAEX v3. 
 
 
 ## Usage
@@ -43,16 +44,4 @@ An example of an imports section looks like this:
 ```
 Of course you can also clone or download this repository and import an ODP from a local copy. The advantage of the first approach is that tools like Protégé or TopBraid Composer will directly use the ontologies from the internet and you can simply increase the version number in case you want to use a newer version of our ODPs.
 
-## Tool Support
-In case you want to make creating individuals from these TBoxes a lot easier, check out our 'Lightweight Industrial Ontology Design Support Tool' (LiOnS). It is designed to create RDF models using the Ontology Design Patterns of this repository. This enables users to:
-- Semi-automatically design RDF models (only variable parts of the graph have to be defined)
-- Consistent modelling, without being an ontology expert
-- Downloading Turtle serialized models or SPARQL INSERTs
 
-For more information, see https://github.com/hsu-aut/lion.
-
-## Further reading:
-- C. Hildebrandt, A. Köcher, C. Kustner, C.-M. Lopez-Enriquez, A.W. Muller, B. Caesar, C.S. Gundlach, A. Fay: Ontology Building for Cyber-Physical Systems: Application in the Manufacturing Domain. IEEE Transactions on Automation Science and Engineering, 2020, S. 1–17.
--  C. Hildebrandt, S. Törsleff, T. Bandyszak, B. Caesar, A. Ludewig, A. Fay: Ontology Engineering for Collaborative Embedded Systems – Requirements and Initial Approach. In: Schäfer, Karagiannis (Hrsg.): Fachtagung Modellierung, 2018.
-- C. Hildebrandt, S. Törsleff, B. Caesar, A. Fay: Ontology Building for Cyber-Physical Systems: A domain expert centric approach. In: 2018 14th IEEE Conference on Automation Science and Engineering (CASE 2018), 2018.
-- C. Hildebrandt, A. Scholz, A. Fay, T. Schröder, T. Hadlich, C. Diedrich, M. Dubovy, C. Eck, R. Wiegand: Semantic Modeling for Collaboration and Cooperation of Systems in the production domain. In: 22nd IEEE Emerging Technology and Factory Automation (ETFA), 2017.
