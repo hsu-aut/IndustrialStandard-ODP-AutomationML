@@ -837,7 +837,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasAMLVersion -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasAMLVersion">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasAMLVersion</rdfs:label>
         <skos:definition>Defines the AML Version of an AML file.</skos:definition>
         <skos:prefLabel xml:lang="en">hasAMLVersion</skos:prefLabel>
@@ -1127,7 +1127,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasOriginVendorURL">
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Origin"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasOriginVendorURL</rdfs:label>
         <skos:definition xml:lang="en">Defines the Vendor url of the writter, i.e., the tool that produces the AutomationML file</skos:definition>
         <skos:prefLabel xml:lang="en">hasOriginVendorURL</skos:prefLabel>
@@ -1183,7 +1183,7 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#hasVersion"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#CAEXFile"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasSchemaVersion</rdfs:label>
         <skos:definition xml:lang="en">Defines the version of the current CAEX schema</skos:definition>
         <skos:prefLabel>hasSchemaVersion</skos:prefLabel>
@@ -1213,7 +1213,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasVersion -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasVersion">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasVersion</rdfs:label>
         <skos:definition xml:lang="en">General property to define versions of the AutomationML elements</skos:definition>
         <skos:prefLabel xml:lang="en">hasVersion</skos:prefLabel>
