@@ -357,6 +357,28 @@
     
 
 
+    <!-- https://w3id.org/hsu-aut/AutomationML#hasFacet -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasFacet">
+        <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Facet"/>
+        <rdfs:label>hasFacet</rdfs:label>
+        <skos:definition>Used to connect an Element to a Facet.</skos:definition>
+        <skos:prefLabel>hasFacet</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hsu-aut/AutomationML#hasGroup -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasGroup">
+        <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Group"/>
+        <rdfs:label>hasGroup</rdfs:label>
+        <skos:definition>Used to link a Group to the Element it belongs to.</skos:definition>
+        <skos:prefLabel>hasGroup</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/hsu-aut/AutomationML#hasInstanceHierarchy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasInstanceHierarchy">
