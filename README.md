@@ -1,8 +1,34 @@
 # AutomationML Ontology-Design Pattern
 
-## Introduction
+## AutomationML
 
-The development of software functionalities, or applications in general, that monitor and analyze manufacturing related data in order to improve, support or automate processes, is becoming increasingly important in industry. These applications require several information from different data sources in their context. An application that is planning a maintenance workers daily schedule for instance, requires several information about machine statuses, production plans and inventory, which resides in different systems likes Programmable Logical Controllers (PLC) or Structured Query Language (SQL) databases. Furthermore, manufacturing companies usually run machines and software systems from different vendors or of different ages. The schemata used in such systems do therefore not follow a certain standard, i.e. they are very heterogeneous in their semantics. When building such applications, accessing, searching and understanding the data sources is becoming a very time intensive, manual and error prone procedure that is repeated for every newly build application and for every newly introduced data source. To allow for an eased access, searching and understanding of these heterogeneous data sources, an ontology can be used to integrate all heterogeneous data sources in one schemata. 
+AutomationML (Automation Markup Language) is an open, XML-based standard designed for the comprehensive representation of engineering data in the field of industrial automation. It was developed to address the challenge of integrating heterogeneous engineering tools used throughout the lifecycle of automated production systems.
+It offers advantages in numerous aspects:
+ - Interoperability: Different engineering tools from various vendors often use proprietary data formats, making integration difficult. AutomationML aims to standardize data exchange formats to facilitate seamless interoperability between these tools.
+ - Data Consistency: Ensuring consistent and error-free data across various engineering phases (e.g., design, implementation, operation) is crucial. AutomationML provides a structured way to maintain data consistency throughout the entire system lifecycle.
+ - Complexity Management: Modern automated systems are highly complex, involving numerous components and subsystems. AutomationML helps manage this complexity by offering a clear and standardized method to represent and interconnect different system elements.
+ - Flexibility and Extensibility: AutomationML is designed to be flexible and extensible, allowing it to adapt to future requirements and incorporate new technologies and methodologies as they emerge.
+
+The content of this ontology and exemplary use cases are described in this preprint: https://arxiv.org/abs/2504.21694
+
+```bibtex
+@article{Westermann2025,
+  author = {Westermann, Tom and Ramonat, Malte and Hujer, Johannes and
+            Gehlhoff, Felix and Fay, Alexander},
+  title = {Automatic Mapping of {AutomationML} Files to Ontologies for
+           Graph Queries and Validation},
+  journal = {arXiv preprint arXiv:2504.21694},
+  year = {2025},
+  eprint = {2504.21694},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.AI},
+  doi = {10.48550/arXiv.2504.21694}
+}
+```
+
+## Background and Motivation
+
+The development of software functionalities, or applications in general, that monitor and analyze manufacturing related data in order to improve, support or automate processes, is becoming increasingly important in industry. These applications require several information from different data sources in their context. An application that is planning a maintenance workers daily schedule for instance, requires several information about machine statuses, production plans and inventory, which resides in different systems likes Programmable Logical Controllers (PLC) or Structured Query Language (SQL) databases. Furthermore, manufacturing companies usually run machines and software systems from different vendors or of different ages. The schemata used in such systems do therefore not follow a certain standard, i.e. they are very heterogeneous in their semantics. When building such applications, accessing, searching and understanding the data sources is becoming a very time intensive, manual and error prone procedure that is repeated for every newly build application and for every newly introduced data source. To allow for an eased access, searching and understanding of these heterogeneous data sources, an ontology can be used to integrate all heterogeneous data sources in one schemata.
 
 This repository contains an ontology of AutomationML. We maintain a whole list of standard-based ontologies, check out these links:
  - [VDI 2206](https://github.com/hsu-aut/IndustrialStandard-ODP-VDI2206)
@@ -13,23 +39,7 @@ This repository contains an ontology of AutomationML. We maintain a whole list o
  - [WADL](https://github.com/hsu-aut/IndustrialStandard-ODP-WADL)
  - [DIN EN 62264-2](https://github.com/hsu-aut/IndustrialStandard-ODP-DINEN62264-2)
  - [OPC UA](https://github.com/hsu-aut/IndustrialStandard-ODP-OPC-UA)
- - [ISO 22400-2](https://github.com/hsu-aut/IndustrialStandard-ODP-ISO22400-2)
- 
-
-
-## AutomationML
-
-AutomationML (Automation Markup Language) is an open, XML-based standard designed for the comprehensive representation of engineering data in the field of industrial automation. It was developed to address the challenge of integrating heterogeneous engineering tools used throughout the lifecycle of automated production systems.
-It offers advantages in numerous aspects: 
- - Interoperability: Different engineering tools from various vendors often use proprietary data formats, making integration difficult. AutomationML aims to standardize data exchange formats to facilitate seamless interoperability between these tools.
- - Data Consistency: Ensuring consistent and error-free data across various engineering phases (e.g., design, implementation, operation) is crucial. AutomationML provides a structured way to maintain data consistency throughout the entire system lifecycle.
- - Complexity Management: Modern automated systems are highly complex, involving numerous components and subsystems. AutomationML helps manage this complexity by offering a clear and standardized method to represent and interconnect different system elements.
- - Flexibility and Extensibility: AutomationML is designed to be flexible and extensible, allowing it to adapt to future requirements and incorporate new technologies and methodologies as they emerge.
-
-This ontology builds upon and extends a previous AutomationML-Ontology, that can be found at https://github.com/i40-Tools/AutomationMLOntology/tree/master.
-A preprint describing the design principles and choices can further be found at https://www.semantic-web-journal.net/system/files/swj1855.pdf. 
-However, since the inception of the original AutomationML-ontology, the AutomationML standard underwent continuous and significant development, which caused the ontology to become outdated. 
-The provided ontology significantly extends the coverage of the previous version and introduced numerous changes to align the ontology to the vocabulary of AutomationML/CAEX v3. 
+ - [ISO 22400-2](https://github.com/hsu-aut/IndustrialStandard-ODP-ISO22400-2) 
 
 
 ## Usage
