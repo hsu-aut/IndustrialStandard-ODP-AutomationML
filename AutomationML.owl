@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/hsu-aut/AutomationML#"
-     xml:base="https://w3id.org/hsu-aut/AutomationML#"
+     xml:base="https://w3id.org/hsu-aut/AutomationML"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:cp="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -133,12 +133,6 @@
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    
-
-
     <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
@@ -262,9 +256,24 @@
     
 
 
+    <!-- https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <rdfs:comment xml:lang="en">Common super-property for all AutomationML object properties that relate AutomationML elements to each other.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/hsu-aut/AutomationML#"/>
+        <rdfs:label xml:lang="en">AutomationMLObjectProperty</rdfs:label>
+        <skos:definition xml:lang="en">Abstract base object property for all structural and relational properties between AutomationML elements.</skos:definition>
+        <skos:prefLabel xml:lang="en">AutomationMLObjectProperty</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/hsu-aut/AutomationML#contains -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#contains">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#CAEXFile"/>
         <rdfs:range>
             <owl:Class>
@@ -287,6 +296,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasAttribute -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasAttribute">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
         <rdfs:label xml:lang="en">hasAttribute</rdfs:label>
@@ -299,6 +309,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasAttributeType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasAttributeType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#AttributeTypeLib"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#AttributeType"/>
         <rdfs:label>hasAttributeType</rdfs:label>
@@ -324,6 +335,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasBaseInterfaceClass -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasBaseInterfaceClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#ExternalInterface"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClass"/>
         <rdfs:label>hasBaseInterfaceClass</rdfs:label>
@@ -336,6 +348,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasConstraint -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasConstraint">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Constraint"/>
         <rdfs:label>hasConstraint</rdfs:label>
@@ -348,6 +361,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasExternalReference -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasExternalReference">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#CAEXFile"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#ExternalReference"/>
         <rdfs:label xml:lang="en">hasExternalReference</rdfs:label>
@@ -360,6 +374,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasFacet -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasFacet">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Facet"/>
         <rdfs:label>hasFacet</rdfs:label>
         <skos:definition>Used to connect an Element to a Facet.</skos:definition>
@@ -371,6 +386,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasGroup -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasGroup">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Group"/>
         <rdfs:label>hasGroup</rdfs:label>
         <skos:definition>Used to link a Group to the Element it belongs to.</skos:definition>
@@ -395,6 +411,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasInterface -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasInterface">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -417,6 +434,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasInterfaceClass -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasInterfaceClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClassLib"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClass"/>
         <rdfs:label xml:lang="en">hasInterfaceClass</rdfs:label>
@@ -442,6 +460,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasInternalElement -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasInternalElement">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -461,6 +480,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasMappingObject -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasMappingObject">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:comment>Only explicitly included in AutomationML, if the Names of the Elements do not match and the Information is explicitly modeled. If the names match, it can be inferred through a SWRL-Rule.</rdfs:comment>
         <rdfs:label>hasMappingObject</rdfs:label>
         <skos:definition>Connects Attributes or Interfaces of Internal Elements to their corresponding counterparts at the Internal Elements RoleClass (as per :hasRequiredRole).</skos:definition>
@@ -472,6 +492,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasMasterObject -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasMasterObject">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#hasMirrorObject"/>
         <rdfs:label>hasMasterObject</rdfs:label>
         <skos:definition>Describes that an Object has a MasterObject. In AutomationML this is the case if it references the ID of an InternalElement through the property &apos;RefBaseSystemUnitPath&apos;.</skos:definition>
@@ -483,6 +504,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasMirrorObject -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasMirrorObject">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:label>hasMirrorObject</rdfs:label>
         <skos:definition>Defines that a master element has MirrorObjects.</skos:definition>
         <skos:prefLabel>hasMirrorObject</skos:prefLabel>
@@ -493,6 +515,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasOrigin -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasOrigin">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:label>hasOrigin</rdfs:label>
         <skos:definition>Related Origin for a CAEX file.</skos:definition>
         <skos:prefLabel>hasOrigin</skos:prefLabel>
@@ -504,6 +527,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasPart">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#isPartOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain>
             <owl:Class>
@@ -527,6 +552,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasProject -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasProject">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Project"/>
         <rdfs:label>hasProject</rdfs:label>
         <skos:definition xml:lang="en">Related Project for the CAEX File.</skos:definition>
@@ -538,6 +564,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasRefAttributeType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasRefAttributeType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -557,6 +584,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasRefBaseClass -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasRefBaseClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -586,6 +614,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasRefBaseSystemUnitClass -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasRefBaseSystemUnitClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#InternalElement"/>
         <rdfs:range>
             <owl:Class>
@@ -606,6 +635,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasRefPartnerSide -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasRefPartnerSide">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#InternalLink"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#ExternalInterface"/>
         <rdfs:label>hasRefPartnerSide</rdfs:label>
@@ -641,6 +671,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasRoleClass -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasRoleClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#RoleClassLib"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#RoleClass"/>
         <rdfs:label>hasRoleClass</rdfs:label>
@@ -666,6 +697,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasRoleRequirement -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasRoleRequirement">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -685,6 +717,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasSemanticRef -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasSemanticRef">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -705,6 +738,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasSupportedRoleClass -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasSupportedRoleClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -724,6 +758,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasSystemUnitClass -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasSystemUnitClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#SystemUnitClassLib"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#SystemUnitClass"/>
         <rdfs:label>hasSystemUnitClass</rdfs:label>
@@ -749,6 +784,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasUnit -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasUnit">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
         <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
         <rdfs:label>hasUnit</rdfs:label>
@@ -760,6 +796,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasUnitValue -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasUnitValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
         <rdfs:range rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Measure"/>
         <rdfs:label>hasUnitValue</rdfs:label>
@@ -772,6 +809,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#isConnectedToEClass -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#isConnectedToEClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -792,6 +830,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#isLinkedTo -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#isLinkedTo">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#ExternalInterface"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#ExternalInterface"/>
         <rdfs:label>isLinkedTo</rdfs:label>
@@ -805,6 +844,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#isPartOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:range>
             <owl:Class>
@@ -856,9 +896,23 @@
     
 
 
+    <!-- https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <rdfs:comment xml:lang="en">Common super-property for all AutomationML data properties that assign literal values to AutomationML elements.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/hsu-aut/AutomationML#"/>
+        <rdfs:label xml:lang="en">AutomationMLDataProperty</rdfs:label>
+        <skos:definition xml:lang="en">Abstract base data property for all data-valued properties of AutomationML elements including identifiers, names, values, and metadata.</skos:definition>
+        <skos:prefLabel xml:lang="en">AutomationMLDataProperty</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/hsu-aut/AutomationML#hasAMLVersion -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasAMLVersion">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasAMLVersion</rdfs:label>
         <skos:definition>Defines the AML Version of an AML file.</skos:definition>
@@ -870,6 +924,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasAdditionalInformation -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasAdditionalInformation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#CAEXFile"/>
         <rdfs:label xml:lang="en">hasAdditionalInformation</rdfs:label>
         <skos:definition xml:lang="en">Connect the CAEXFile with the Additional information concept</skos:definition>
@@ -881,6 +936,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasAttributeDescription -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasAttributeDescription">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
         <rdfs:label>hasAttributeDescription</rdfs:label>
@@ -893,6 +949,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasAttributeName -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasAttributeName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasAttributeName</rdfs:label>
@@ -905,6 +962,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasAttributeValue -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasAttributeValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasAttributeValue</rdfs:label>
@@ -917,6 +975,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasClassificationClass -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasClassificationClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#eClassSpecification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasClassificationClass</rdfs:label>
@@ -929,6 +988,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasDataType -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasDataType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -948,6 +1008,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasDefaultValue -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasDefaultValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -966,6 +1027,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasExternalReferenceAlias -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasExternalReferenceAlias">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#ExternalReference"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasExternalReferenceAlias</rdfs:label>
@@ -978,6 +1040,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasExternalReferencePath -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasExternalReferencePath">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#ExternalReference"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasExternalReferencePath</rdfs:label>
@@ -990,7 +1053,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasFileName -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasFileName">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#CAEXFile"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
         <rdfs:label>hasFileName</rdfs:label>
@@ -1004,6 +1067,7 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasID">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:label>hasID</rdfs:label>
         <skos:definition>Superclass for Assignment of IDs for elements.</skos:definition>
     </owl:DatatypeProperty>
@@ -1013,6 +1077,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasIRDIeClass -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasIRDIeClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#eClassSpecification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1026,6 +1091,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasLastWritingDateTime -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasLastWritingDateTime">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Origin"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label>hasLastWritingDateTime</rdfs:label>
@@ -1038,6 +1104,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasMaxValue -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasMaxValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#OrdinalScaledConstraint"/>
         <rdfs:label>hasMaxValue</rdfs:label>
         <skos:definition>Defines the maximum value of an attribute that has an OrdinalScaledConstraint.</skos:definition>
@@ -1049,6 +1116,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasMinValue -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasMinValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#OrdinalScaledConstraint"/>
         <rdfs:label>hasMinValue</rdfs:label>
         <skos:definition>Defines the minimim value of an attribute that has an OrdinalScaledConstraint.</skos:definition>
@@ -1060,6 +1128,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasName -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
         <rdfs:label>hasName</rdfs:label>
         <skos:definition xml:lang="en">General property to define names in AutomationML</skos:definition>
@@ -1124,6 +1193,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasOriginRelease -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasOriginRelease">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Origin"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasOriginRelease</rdfs:label>
@@ -1136,6 +1206,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasOriginVendor -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasOriginVendor">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Origin"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
         <rdfs:label>hasOriginVendor</rdfs:label>
@@ -1148,6 +1219,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasOriginVendorURL -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasOriginVendorURL">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Origin"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasOriginVendorURL</rdfs:label>
@@ -1173,6 +1245,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasRequiredValue -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasRequiredValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1190,6 +1263,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasRequirement -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasRequirement">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#UnknownTypeConstraint"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
         <rdfs:label>hasRequirement</rdfs:label>
@@ -1216,6 +1290,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasUnitName -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasUnitName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1235,6 +1310,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#hasVersion -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasVersion">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>hasVersion</rdfs:label>
         <skos:definition xml:lang="en">General property to define versions of the AutomationML elements</skos:definition>
@@ -1259,6 +1335,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#refSemanticAttribute -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#refSemanticAttribute">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1313,9 +1390,10 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#Attribute -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#Attribute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/hsu-aut/AutomationML#"/>
-        <rdfs:seeAlso>1417686950-AutomationML Whitepaper Part 1 - AutomationML Architecture v2_Oct2014, page 11</rdfs:seeAlso>
         <rdfs:label>Attribute</rdfs:label>
+        <rdfs:seeAlso>1417686950-AutomationML Whitepaper Part 1 - AutomationML Architecture v2_Oct2014, page 11</rdfs:seeAlso>
         <skos:definition xml:lang="en">Property which belongs to an AML object</skos:definition>
         <skos:prefLabel xml:lang="en">Attribute</skos:prefLabel>
     </owl:Class>
@@ -1325,6 +1403,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#AttributeType -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#AttributeType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>AttributeType</rdfs:label>
         <skos:definition>Defines base structures for attribute definitions</skos:definition>
         <skos:prefLabel>AttributeType</skos:prefLabel>
@@ -1335,6 +1414,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#AttributeTypeLib -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#AttributeTypeLib">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>AttributeTypeLib</rdfs:label>
         <skos:definition>Library containing AML AttributeTypes</skos:definition>
         <skos:prefLabel>AttributeTypeLib</skos:prefLabel>
@@ -1342,9 +1422,22 @@
     
 
 
+    <!-- https://w3id.org/hsu-aut/AutomationML#AutomationMLElement -->
+
+    <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement">
+        <rdfs:comment xml:lang="en">Common super-class for all main AutomationML structural elements including classes, libraries, instances, attributes, and interfaces.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/hsu-aut/AutomationML#"/>
+        <rdfs:label xml:lang="en">AutomationMLElement</rdfs:label>
+        <skos:definition xml:lang="en">Abstract base class representing any element in the AutomationML model that can be part of the hierarchical structure.</skos:definition>
+        <skos:prefLabel xml:lang="en">AutomationMLElement</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/hsu-aut/AutomationML#CAEXFile -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#CAEXFile">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>CAEXFile</rdfs:label>
         <skos:definition xml:lang="en">Root-element of the CAEX schema</skos:definition>
         <skos:prefLabel xml:lang="en">CAEXFile</skos:prefLabel>
@@ -1355,6 +1448,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#Constraint -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#Constraint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>Constraint</rdfs:label>
         <skos:definition>Constraint limit the values that an AutomationML-Attribute may take.</skos:definition>
         <skos:prefLabel>Constraint</skos:prefLabel>
@@ -1365,6 +1459,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#ExternalInterface -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#ExternalInterface">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>ExternalInterface</rdfs:label>
         <skos:altLabel xml:lang="en">EI</skos:altLabel>
         <skos:definition>External interfaces in AutomationML can include details about how a particular device or system interacts with other devices, software, or processes.</skos:definition>
@@ -1376,6 +1471,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#ExternalReference -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#ExternalReference">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>ExternalReference</rdfs:label>
         <skos:definition xml:lang="en">External Reference for a CAEX File</skos:definition>
         <skos:prefLabel xml:lang="en">ExternalReference</skos:prefLabel>
@@ -1386,6 +1482,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#ExternalStandard -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#ExternalStandard">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>ExternalStandard</rdfs:label>
         <skos:definition xml:lang="en">Represents an External Standard which is used to provide unique Semantic reference for AML elements, e.g., eClass</skos:definition>
         <skos:prefLabel xml:lang="en">ExternalStandard</skos:prefLabel>
@@ -1396,6 +1493,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#Facet -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#Facet">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>Facet</rdfs:label>
         <skos:definition>“Facet” is an element type for objects that serve as sub-view on attributes or interfaces of an AML object.</skos:definition>
         <skos:prefLabel>Facet</skos:prefLabel>
@@ -1406,6 +1504,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#Group -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#Group">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>Group</rdfs:label>
         <skos:definition>A group is a structural element used to logically organize and bundle related objects, components, or sub-systems within a model. Groups help manage complex hierarchical data by grouping elements based on functionality, location, or other logical criteria.</skos:definition>
         <skos:prefLabel>Group</skos:prefLabel>
@@ -1416,6 +1515,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#InstanceHierarchy -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#InstanceHierarchy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>InstanceHierarchy</rdfs:label>
         <skos:altLabel xml:lang="en">IH</skos:altLabel>
         <skos:definition xml:lang="en">CAEX InstanceHierarchies serve for the storage of individual and project related engineering information. They form the centre of the AML top-level format and contain all individual data objects including properties, interfaces, relations and references.</skos:definition>
@@ -1427,6 +1527,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#InterfaceClass -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#InterfaceClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>InterfaceClass</rdfs:label>
         <skos:altLabel xml:lang="en">IC</skos:altLabel>
         <skos:definition xml:lang="en">Defines the relations between AML Objects. Should be identified with its tag name</skos:definition>
@@ -1438,6 +1539,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#InterfaceClassLib -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#InterfaceClassLib">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>InterfaceClassLib</rdfs:label>
         <skos:altLabel xml:lang="en">IC Lib</skos:altLabel>
         <skos:definition xml:lang="en">Library containing AML Interface Classes</skos:definition>
@@ -1449,6 +1551,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#InternalElement -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#InternalElement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>InternalElement</rdfs:label>
         <skos:altLabel xml:lang="en">IE</skos:altLabel>
         <skos:definition xml:lang="en">Shall be used in order to define nested objects inside of a SystemUnitClass or another InternalElement. Allows description of the internal structure of an CAEX object</skos:definition>
@@ -1460,6 +1563,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#InternalLink -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#InternalLink">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>InternalLink</rdfs:label>
         <skos:altLabel xml:lang="en">IL</skos:altLabel>
         <skos:definition xml:lang="en">Connects two CAEX elements like InternalElements</skos:definition>
@@ -1493,6 +1597,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#Origin -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#Origin">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>Origin</rdfs:label>
         <skos:definition>Defines the tool that was used to create an AutomationML file.</skos:definition>
         <skos:prefLabel>Origin</skos:prefLabel>
@@ -1503,6 +1608,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#Project -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#Project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>Project</rdfs:label>
         <skos:definition xml:lang="en">A Project related to the header information with the CAEX File</skos:definition>
         <skos:prefLabel xml:lang="en">Project</skos:prefLabel>
@@ -1513,6 +1619,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#RoleClass -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#RoleClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>RoleClass</rdfs:label>
         <skos:altLabel xml:lang="en">RC</skos:altLabel>
         <skos:definition xml:lang="en">RoleClasses are vendor independent and generic entities. They are used to assign a generic semantics to an object instance and to describe requirements of this object instance. Also, they can help in mapping data models of different engineering tools.</skos:definition>
@@ -1524,6 +1631,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#RoleClassLib -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#RoleClassLib">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>RoleClassLib</rdfs:label>
         <skos:altLabel xml:lang="en">RCL</skos:altLabel>
         <skos:definition xml:lang="en">Provides definitions of abstract characteristics of CAEX objects and thus serve the automatic semantic interpretation of user-defined AML objects</skos:definition>
@@ -1535,6 +1643,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#SystemUnitClass -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#SystemUnitClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>SystemUnitClass</rdfs:label>
         <skos:altLabel xml:lang="en">SUC</skos:altLabel>
         <skos:definition xml:lang="en">Describe concrete types of objects reused within engineering. Allows for different user-defined classes. Inheritance between a SystemUnitClass and an object instance is not allowed.</skos:definition>
@@ -1546,6 +1655,7 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#SystemUnitClassLib -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#SystemUnitClassLib">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:label>SystemUnitClassLib</rdfs:label>
         <skos:altLabel xml:lang="en">SUC Lib</skos:altLabel>
         <skos:definition xml:lang="en">Store vendor specific AML classes</skos:definition>
