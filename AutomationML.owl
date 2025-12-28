@@ -297,7 +297,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasAttribute">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
         <rdfs:label xml:lang="en">hasAttribute</rdfs:label>
         <skos:definition xml:lang="en">General property to describe the relation of the CAEX components with Attributes</skos:definition>
@@ -375,6 +375,14 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasFacet">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/hsu-aut/AutomationML#InternalElement"/>
+                    <rdf:Description rdf:about="https://w3id.org/hsu-aut/AutomationML#SystemUnitClass"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Facet"/>
         <rdfs:label>hasFacet</rdfs:label>
         <skos:definition>Used to connect an Element to a Facet.</skos:definition>
@@ -387,6 +395,14 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasGroup">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/hsu-aut/AutomationML#InternalElement"/>
+                    <rdf:Description rdf:about="https://w3id.org/hsu-aut/AutomationML#SystemUnitClass"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Group"/>
         <rdfs:label>hasGroup</rdfs:label>
         <skos:definition>Used to link a Group to the Element it belongs to.</skos:definition>
@@ -516,6 +532,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasOrigin">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#CAEXFile"/>
+        <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Origin"/>
         <rdfs:label>hasOrigin</rdfs:label>
         <skos:definition>Related Origin for a CAEX file.</skos:definition>
         <skos:prefLabel>hasOrigin</skos:prefLabel>
@@ -553,6 +571,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/hsu-aut/AutomationML#hasProject">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#CAEXFile"/>
         <rdfs:range rdf:resource="https://w3id.org/hsu-aut/AutomationML#Project"/>
         <rdfs:label>hasProject</rdfs:label>
         <skos:definition xml:lang="en">Related Project for the CAEX File.</skos:definition>
