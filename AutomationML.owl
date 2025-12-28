@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/hsu-aut/AutomationML#"
-     xml:base="https://w3id.org/hsu-aut/AutomationML"
+     xml:base="https://w3id.org/hsu-aut/AutomationML#"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:cp="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -10,7 +10,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
-     xmlns:foaf="http://xmlns.com/foaf/spec/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -23,13 +23,13 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/hsu-aut/AutomationML#">
-        <owl:versionIRI rdf:resource="https://w3id.org/hsu-aut/AutomationML#/1.0.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/hsu-aut/AutomationML/1.1.0"/>
         <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</dc:rights>
         <terms:created>2023-12-23</terms:created>
         <terms:creator rdf:resource="https://github.com/tomwestermann"/>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/"/>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <vann:preferredNamespacePrefix>aml</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://w3id.org/hsu-aut/AutomationML/</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>https://w3id.org/hsu-aut/AutomationML#</vann:preferredNamespaceUri>
         <void:vocabulary rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <void:vocabulary rdf:resource="http://purl.org/dc/terms/"/>
         <void:vocabulary rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -37,12 +37,12 @@
         <void:vocabulary rdf:resource="http://www.w3.org/2001/XMLSchema#"/>
         <void:vocabulary rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
         <void:vocabulary rdf:resource="http://www.w3.org/XML/1998/namespace"/>
-        <void:vocabulary rdf:resource="http://xmlns.com/foaf/spec/"/>
+        <void:vocabulary rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <void:vocabulary rdf:resource="https://w3id.org/hsu-aut/AutomationML#"/>
         <doap:repository rdf:resource="https://github.com/hsu-aut/IndustrialStandard-ODP-AutomationML"/>
         <rdfs:comment xml:lang="en">A Vocabulary to represent the AutomationML Standard - IEC 62714</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/hsu-aut/AutomationML#"/>
-        <owl:versionInfo>0.1</owl:versionInfo>
+        <owl:versionInfo>1.1.0</owl:versionInfo>
         <skos:altLabel xml:lang="en">Alternative label for an AML object</skos:altLabel>
         <skos:definition xml:lang="en">An Ontology to represent the AutomationML Standard - IEC 62714</skos:definition>
         <skos:prefLabel xml:lang="en">aml</skos:prefLabel>
@@ -133,9 +133,9 @@
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#commment -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#commment"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     
 
 
@@ -238,7 +238,7 @@
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:isDefinedBy>http://www.ontologydesignpatterns.org/cp/owl/partof.owl</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl"/>
     </owl:ObjectProperty>
     
 
@@ -247,7 +247,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#isPartOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:isDefinedBy>http://www.ontologydesignpatterns.org/cp/owl/partof.owl</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl"/>
     </owl:ObjectProperty>
     
 
@@ -257,7 +257,7 @@
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
         <rdfs:domain rdf:resource="https://w3id.org/hsu-aut/AutomationML#CAEXFile"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:isDefinedBy>http://www.w3.org/ns/prov#wasGeneratedBy</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
     </owl:ObjectProperty>
     
 
@@ -851,7 +851,7 @@
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue -->
 
     <owl:DatatypeProperty rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue">
-        <rdfs:isDefinedBy>http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
     </owl:DatatypeProperty>
     
 
@@ -1283,7 +1283,7 @@
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Measure -->
 
     <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Measure">
-        <rdfs:isDefinedBy>http://www.ontology-of-units-of-measure.org/resource/om-2/Measure</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Measure"/>
     </owl:Class>
     
 
@@ -1291,7 +1291,7 @@
     <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Unit -->
 
     <owl:Class rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit">
-        <rdfs:isDefinedBy>http://www.ontology-of-units-of-measure.org/resource/om-2/Unit</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"/>
     </owl:Class>
     
 
@@ -1305,7 +1305,7 @@
     <!-- http://www.w3.org/ns/prov#Activity -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
-        <rdfs:isDefinedBy>https://www.w3.org/TR/prov-o/#Activity</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="https://www.w3.org/TR/prov-o/#Activity"/>
     </owl:Class>
     
 
@@ -1313,7 +1313,8 @@
     <!-- https://w3id.org/hsu-aut/AutomationML#Attribute -->
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#Attribute">
-        <rdfs:isDefinedBy>1417686950-AutomationML Whitepaper Part 1 - AutomationML Architecture v2_Oct2014, page 11</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/hsu-aut/AutomationML#"/>
+        <rdfs:seeAlso>1417686950-AutomationML Whitepaper Part 1 - AutomationML Architecture v2_Oct2014, page 11</rdfs:seeAlso>
         <rdfs:label>Attribute</rdfs:label>
         <skos:definition xml:lang="en">Property which belongs to an AML object</skos:definition>
         <skos:prefLabel xml:lang="en">Attribute</skos:prefLabel>
