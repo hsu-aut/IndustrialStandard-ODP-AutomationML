@@ -1412,6 +1412,11 @@
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#Attribute">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#AttributeType"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InternalElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#RoleClass"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#SystemUnitClass"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClass"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/hsu-aut/AutomationML#"/>
         <rdfs:label xml:lang="en">Attribute</rdfs:label>
         <rdfs:seeAlso>1417686950-AutomationML Whitepaper Part 1 - AutomationML Architecture v2_Oct2014, page 11</rdfs:seeAlso>
@@ -1425,6 +1430,11 @@
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#AttributeType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InternalElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#RoleClass"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#SystemUnitClass"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClass"/>
         <rdfs:label xml:lang="en">AttributeType</rdfs:label>
         <skos:definition xml:lang="en">Defines base structures for attribute definitions</skos:definition>
         <skos:prefLabel xml:lang="en">AttributeType</skos:prefLabel>
@@ -1436,6 +1446,10 @@
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#AttributeTypeLib">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClassLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#RoleClassLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#SystemUnitClassLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InstanceHierarchy"/>
         <rdfs:label xml:lang="en">AttributeTypeLib</rdfs:label>
         <skos:definition xml:lang="en">Library containing AML AttributeTypes</skos:definition>
         <skos:prefLabel xml:lang="en">AttributeTypeLib</skos:prefLabel>
@@ -1537,6 +1551,10 @@
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#InstanceHierarchy">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#AttributeTypeLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClassLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#RoleClassLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#SystemUnitClassLib"/>
         <rdfs:label xml:lang="en">InstanceHierarchy</rdfs:label>
         <skos:altLabel xml:lang="en">IH</skos:altLabel>
         <skos:definition xml:lang="en">CAEX InstanceHierarchies serve for the storage of individual and project related engineering information. They form the centre of the AML top-level format and contain all individual data objects including properties, interfaces, relations and references.</skos:definition>
@@ -1549,6 +1567,11 @@
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#InterfaceClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#AttributeType"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InternalElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#RoleClass"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#SystemUnitClass"/>
         <rdfs:label xml:lang="en">InterfaceClass</rdfs:label>
         <skos:altLabel xml:lang="en">IC</skos:altLabel>
         <skos:definition xml:lang="en">Defines the relations between AML Objects. Should be identified with its tag name</skos:definition>
@@ -1561,6 +1584,10 @@
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#InterfaceClassLib">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#AttributeTypeLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#RoleClassLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#SystemUnitClassLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InstanceHierarchy"/>
         <rdfs:label xml:lang="en">InterfaceClassLib</rdfs:label>
         <skos:altLabel xml:lang="en">IC Lib</skos:altLabel>
         <skos:definition xml:lang="en">Library containing AML Interface Classes</skos:definition>
@@ -1573,6 +1600,11 @@
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#InternalElement">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#AttributeType"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#RoleClass"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#SystemUnitClass"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClass"/>
         <rdfs:label xml:lang="en">InternalElement</rdfs:label>
         <skos:altLabel xml:lang="en">IE</skos:altLabel>
         <skos:definition xml:lang="en">Shall be used in order to define nested objects inside of a SystemUnitClass or another InternalElement. Allows description of the internal structure of an CAEX object</skos:definition>
@@ -1641,6 +1673,11 @@
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#RoleClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#AttributeType"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InternalElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#SystemUnitClass"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClass"/>
         <rdfs:label xml:lang="en">RoleClass</rdfs:label>
         <skos:altLabel xml:lang="en">RC</skos:altLabel>
         <skos:definition xml:lang="en">RoleClasses are vendor independent and generic entities. They are used to assign a generic semantics to an object instance and to describe requirements of this object instance. Also, they can help in mapping data models of different engineering tools.</skos:definition>
@@ -1653,6 +1690,10 @@
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#RoleClassLib">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#AttributeTypeLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClassLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#SystemUnitClassLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InstanceHierarchy"/>
         <rdfs:label xml:lang="en">RoleClassLib</rdfs:label>
         <skos:altLabel xml:lang="en">RCL</skos:altLabel>
         <skos:definition xml:lang="en">Provides definitions of abstract characteristics of CAEX objects and thus serve the automatic semantic interpretation of user-defined AML objects</skos:definition>
@@ -1665,6 +1706,11 @@
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#SystemUnitClass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#Attribute"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#AttributeType"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InternalElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#RoleClass"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClass"/>
         <rdfs:label xml:lang="en">SystemUnitClass</rdfs:label>
         <skos:altLabel xml:lang="en">SUC</skos:altLabel>
         <skos:definition xml:lang="en">Describe concrete types of objects reused within engineering. Allows for different user-defined classes. Inheritance between a SystemUnitClass and an object instance is not allowed.</skos:definition>
@@ -1677,6 +1723,10 @@
 
     <owl:Class rdf:about="https://w3id.org/hsu-aut/AutomationML#SystemUnitClassLib">
         <rdfs:subClassOf rdf:resource="https://w3id.org/hsu-aut/AutomationML#AutomationMLElement"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#AttributeTypeLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InterfaceClassLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#RoleClassLib"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/hsu-aut/AutomationML#InstanceHierarchy"/>
         <rdfs:label xml:lang="en">SystemUnitClassLib</rdfs:label>
         <skos:altLabel xml:lang="en">SUC Lib</skos:altLabel>
         <skos:definition xml:lang="en">Store vendor specific AML classes</skos:definition>
