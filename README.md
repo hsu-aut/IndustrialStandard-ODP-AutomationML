@@ -10,6 +10,8 @@ AutomationML offers advantages in numerous aspects:
  - **Complexity Management**: Modern automated systems are highly complex, involving numerous components and subsystems. AutomationML helps manage this complexity by offering a clear and standardized method to represent and interconnect different system elements.
  - **Flexibility and Extensibility**: AutomationML is designed to be flexible and extensible, allowing it to adapt to future requirements and incorporate new technologies and methodologies as they emerge.
 
+![AutomationML Ontology Overview](figures/automationml-overview.svg)
+
 ## Ontology Information
 
 - **Namespace**: `https://w3id.org/hsu-aut/AutomationML#`
