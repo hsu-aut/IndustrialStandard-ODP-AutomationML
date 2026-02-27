@@ -24,10 +24,10 @@
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/hsu-aut/AutomationML#">
         <owl:versionIRI rdf:resource="https://w3id.org/hsu-aut/AutomationML/1.1.1"/>
-        <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</dc:rights>
+        <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/).</dc:rights>
         <terms:created>2023-12-23</terms:created>
         <terms:creator rdf:resource="https://github.com/tomwestermann"/>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <vann:preferredNamespacePrefix>aml</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/hsu-aut/AutomationML#</vann:preferredNamespaceUri>
         <void:vocabulary rdf:resource="http://purl.org/dc/elements/1.1/"/>
